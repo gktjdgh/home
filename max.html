@@ -1,0 +1,24 @@
+<HtML>
+<HEAD>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</HEAD>
+<BODY>
+  <H1>합구하기</H1>
+<script>
+num = prompt("공백으로 분리된 숫자 여러개를 입력하세요")
+num2 = num.split(" ")
+num3 = num2.map(Number)
+max = -1 
+min = 987654321
+for ( i=0; i<num3.length; i++ ) {
+
+if(num3[i] > max) max = num3[i]
+
+if(num3[i] < min) min = num3[i]
+}
+document.write("max값은 : " + max)<br>
+document.write("min값은 : " + min)
+</script>
+ </BODY>
+  </HTML>
